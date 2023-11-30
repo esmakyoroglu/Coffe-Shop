@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="all-content">
+    <!--bg-body-tertiary yazıyordu nav class ın içerisinde bu da rengini değiştiremiyeceğimiz için sildik kendi halini kullanmamıza izin veriyordu-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo"><img width="40" height="40" src="images/coffee.png"/>Coffee Shop</a>
+        <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!--awsome font kütüphanesini eklemezsek bunu kullanmayız-->
+          <span class="fa-solid fa-bars" style="color:white; font-size:23px"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <!--form-control me-2 ile aralarında boşluk bırakılmaktadır. search ile buton arasında-->
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Crafting Moments, One Bean at a Time</h1>
+                <p class="lead text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eveniet possimus autem officiis, quis esse quam velit reiciendis aliquam! Aliquid ex voluptas hic tempora sapiente ad asperiores eaque nemo laboriosam?</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-md px-3 fw-bold">Shop Now</button>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+      <!--g gap anlamındadır row arasındaki boşluğu belirlemiş oluruz-->
+    <div class="text-center fs-3 mt-5 fw-bold">About Us</div>
+    <div class="row flex-lg-row align-items-center m-3 g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <!--img-fluid img-fluid sınıfı, resmin duyarlı olmasını sağlar, yani ekrana sığacak şekilde boyutlandırır.
+        rounded demek de resimin kenarlarını yuvarlaklaştırdık
+        -->
+        <img src="images/nathan-dumlao-KixfBEdyp64-unsplash.jpg" class="d-block mx-lg-auto img-fluid rounded-3" alt="Coffee Bean" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="text-body-emphasis lh-1 mb-3">Savor the Signature of Excellence</h2>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tenetur sint fugiat atque voluptatum? Eius optio voluptas eveniet ducimus commodi numquam delectus consequuntur cum quibusdam, sapiente rem sequi? Nostrum, doloremque?</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-md px-4 fw-bold">More Info</button>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="top-categories">
+      <div class="container">
+      <div class="text-center fs-3 pt-5 fw-bold">Top Categories</div>
+      <div class="row flex-lg-row align-items-center m-3 g-5 py-5">
+        <div class="col col-md-4">
+          <div class="card">
+              <img src="images/snapbythree-my-g6e641CiHFQ-unsplash.jpg" />
+          </div>
+        </div>
+        <div class="col col-md-4">
+          <div class="card">
+              <img src="images/jarek-ceborski-IhqDpFz7I8Q-unsplash.jpg" />
+          </div>
+        </div>
+        <div class="col col-md-4">
+          <div class="card">
+              <img src="images/jeremy-yap-jn-HaGWe4yw-unsplash.jpg"/>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="products">
+      <section class="py-5 mt-7">
+        <div class="container px-4 px-lg-5 mt-5">
+          <div class="header text-center fs-3 mt-5 fw-bold">Products</div>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center mt-5">
+              <!--  margin bottom:5 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/lvz1.jpg" alt="lavazza coffee">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Coffee</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <p class="text-muted text-decoration-line-through">320.00₺</p>
+                                260.00₺
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                      <!--indirmli ürünü belirlemek için-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <img class="card-img-top" src="images/me1.jpg" alt="Mehmet Efendi coffee">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Coffee</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <p class="text-muted text-decoration-line-through">170.00₺</p>
+                                125.00₺
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <img class="card-img-top" src="images/me2.jpg" alt="Mehmet Efendi coffee">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Sale Item</h5>
+                                <p class="text-muted"><strike>150.00₺</strike></p>
+                                120.00₺
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/illy1.png" alt="illy coffee">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Popular Item</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                400.00₺
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/illy2.jpg" alt="illy coffee">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Sale Item</h5>
+                                <p class="text-muted"><strike>500.00₺</strike></p>
+                                390.00₺
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/illy3.jpg" alt="illy coffee">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Fancy Product</h5>
+                                420.00₺ - 370.00₺
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/aiello1.png" alt="italian coffee">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Aiello Coffee</h5>
+                                <div class="star d-flex justify-content-center small text-warning mb-2">
+                                    <div class="fa-regular fa-star"></div>
+                                    <div class="fa-regular fa-star"></div>
+                                    <div class="fa-regular fa-star"></div>
+                                    <div class="fa-regular fa-star"></div>
+                                    <div class="fa-regular fa-star"></div>
+                                </div>
+                                <p class="text-muted text-decoration-line-through">400.00₺</p>
+                                329.00₺
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/kimbo1.jpg" alt="italian coffee">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Popular Item</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="fa-regular fa-star"></div>
+                                    <div class="fa-regular fa-star"></div>
+                                    <div class="fa-regular fa-star"></div>
+                                    <div class="fa-regular fa-star"></div>
+                                    <div class="fa-regular fa-star"></div>
+                                </div>
+                                395.00₺
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="images/lvz2.webp.jpeg" />
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Coffee</h5>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                        </div>
+                        259.00₺
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="images/lvz3.webp.jpeg" />
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Coffee</h5>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                        </div>
+                        345.00₺
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="images/us1.jpg" />
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Coffee</h5>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                        </div>
+                        400.00₺
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="images/us2.jpg" />
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Coffee</h5>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                        </div>
+                        400.00₺
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="images/us3.jpg" />
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Coffee</h5>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                        </div>
+                        400.00₺
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="images/us4.png" />
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Coffee</h5>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                        </div>
+                        380.00₺
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="images/us5.jpg" />
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Coffee</h5>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                          <div class="fa-regular fa-star"></div>
+                        </div>
+                        400.00₺
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-3 bt-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+  <section id="gallary">
+    <div class="text-center fs-3 m-5 fw-bold">Our Gallery</div>
+    <div class="row d-flex justify-content-space-between g-4 shadow-lg p-3 mb-5 rounded">
+      <div class="col col-md-4 py-3 py-md-0 mb-4">
+      <div class="card">
+        <img src="images/christina-rumpf-LMzwJDu6hTE-unsplash.jpg" />
+      </div>
+    </div>
+    <div class="col col-md-4 py-3 py-md-0 mb-4">
+      <div class="card">
+        <img src="images/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" />
+      </div>
+    </div>
+    <div class="col col-md-4 py-3 py-md-0 mb-4">
+      <div class="card">
+        <img src="images/pexels-porapak-apichodilok-373639.jpg" />
+      </div>
+    </div>
+    <div class="col col-md-4 py-3 py-md-0 mb-4">
+      <div class="card">
+        <img src="images/pexels-sarah-122370.jpg" />
+      </div>
+    </div>
+    <div class="col col-md-4 py-3 py-md-0 mb-4">
+      <div class="card">
+        <img src="images/pexels-viktoria-alipatova-2668498.jpg" />
+      </div>
+    </div>
+    <div class="col col-md-4 py-3 py-md-0 mb-4">
+      <div class="card">
+        <img src="images/nathan-dumlao-pMW4jzELQCw-unsplash.jpg" />
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="contact">
+   <div class="container">
+    <div class="row">
+      <div class="col 1col-md-7">
+        <div class="text-center fs-3 m-5 fw-bold">Contact Us</div>
+        <div class="p fw-bold mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta minus tempora, nulla, nemo reiciendis eum officiis adipisci perferendis eligendi hic minima tenetur dolorum iure odit! Esse odio quas voluptates deserunt!
+        </div>
+        <form>
+          <div class="form-group mt-2">
+            <label for="exampleInputEmail1">Name Surname:</label>
+            <input type="name" class="form-control" id="name-surname" placeholder="Name Surname">
+          </div>  
+          <div class="form-group mt-2">
+            <label for="exampleInputEmail1">Email address:</label>
+            <input type="email" class="form-control" id="email"  placeholder="Enter email">
+          </div>
+          <div class="form-group mt-2">
+            <label for="text">What would lie to share with us?</label>
+            <input type="text" class="form-control" id="text" placeholder="Enter a text">
+          </div>
+          <button type="submit" class="btn btn-outline-dark mt-4">Submit</button>
+        </form>
+      </div>
+      <div class="col2 col-md-5">
+        <div class="fs-3 m-5">Info</div> 
+          <p><i class="fa-regular fa-envelope"></i> coffeshop@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +900000000000</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Quam debitis ratione qui harum voluptate, dolore officia optio voluptas nisi vero cumque aspernatur! Esse, quasi! Placeat id dolor voluptatum non dicta.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="blog">
+    <div class="container">
+      <div class="row m-3 g-3 py-5">
+        <div class="header text-center fs-3 m-5 fw-bold">Latest Blogs</div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img class="mx-auto" src="images/Starbucks_Corporation.png" />
+            <div class="card-body">
+              <h4>The acces of Starbucks</h4>
+              <h5>Esma Köroğlu/ 23.10.2023</h5>
+              <p>Let's explore the secret of the world famous coffe brand.</p>
+              <button class="btn btn-outline-dark mt-2">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="py-3 my-4">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <a class="navbar-brand" href="#" id="logo"><img width="40" height="40" src="images/coffee.png"/></a>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">@ Copyrigth 2023 <strong>Coffee Shop</strong></span>
+      <ul class="nav col-md justify-content-end list-unstyled d-flex p-4">
+        <!--ms margin start-->
+        <li class="ms-4"><a class="fa-brands fa-twitter text-dark text-decoration-none" href="#"></a></li>
+        <li class="ms-3"><a class="fa-brands fa-youtube text-dark text-decoration-none" href="#"></a></li>
+        <li class="ms-3"><a class="fa-brands fa-instagram text-dark text-decoration-none" href="#"></a></li>
+        <li class="ms-3"><a class="fa-brands fa-facebook text-dark text-decoration-none" href="#"></a></li>
+      </ul>
+      <a href="#" class="arrow justify-content-end"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" color="black" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg></a>
+    <p class="text-center text-body-secondary">Designed By Esma Köroğlu</p>
+  </footer>
+  
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
+

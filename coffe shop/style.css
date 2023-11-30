@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Besley', serif;
+}
+#logo{
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+}
+.all-content{
+    background: #F5F5F5;
+}
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background-color: #3F2305;
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar{
+    width:10px;
+}
+.navbar{
+    background-color: #F2EAD3;
+}
+#logo{
+    border-radius: 10px;
+    margin-left: 40px;
+    background: #F5F5F5;
+    width: 160px;
+}
+.navbar-nav{
+    margin-left:50px;
+}
+.nav-item .nav-link{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    /*geçiş süresi*/
+    transition: 0.5;
+}
+/*üzerinde geldiğimizde nasıl biçimlendireceğimizi söyledik*/
+.nav-item .nav-link:hover{
+    background: #F5F5F5;
+    border-radius: 5px;
+    color: black;
+}
+.navbar form button{
+    background: black;
+    color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+}
+#home{
+    /*parantez ve virgül kullanıma dikkat et*/
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)),url(images/mike-kenneally-TD4DBagg2wE-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+#home .btn{
+    margin-top: 20px;
+    border: 1px solid black;
+    background: #F5F5F5;
+    /*geçiş sürecini yavaş başlatıp yavaş bitirmiş olduk*/
+    transition: 0.5 ease;
+    /*bir öğenin üzerine geldiğinde imlecin tıklama işaretine dönüşmesidir.*/
+    cursor: pointer;
+}
+#home .btn:hover{
+    background: #F2EAD3;
+}
+#about .btn{
+    border: 1px solid black;
+    background: #F5F5F5;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+#about .btn:hover{
+    background: #F2EAD3;
+}
+@media screen and (max-width:982px){
+    #about p{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:782px){
+    #about p{
+        font-size: 15px;
+    }
+    
+}
+#top-categories img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+#top-categories .col{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#top-categories .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#top-categories .card:hover{
+    /*resimlerin üzerine geldiğinde resimler y ekseninide kayacak*/
+    transform: translateY(-10px);
+}
+#products img{
+    width: mx-auto;
+    height: 250px;
+}
+#products .header{
+    border-bottom: 2px solid #3F2305;
+}
+#gallary .row{
+    background-color: #F5F5F5; 
+}
+#gallary img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+#gallary .col{
+    display: flex;
+    justify-content: center;
+}
+#gallary .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid #3F2305;
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+}
+#contact .container{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(90deg, white 80%, #F2EAD3 20%);
+    border-radius: 10px;
+}
+#contact input{
+    width: 360px;
+    border: none;
+    border-bottom: solid 2px #3F2305;
+}
+#contact .col2{
+    width: 40%;
+    height: 60vh;
+    background-color: black;
+    color: #F5F5F5;
+    margin: 50px;
+    margin-left: 13px;
+}
+@media screen and (max-width: 766px){
+    #contact .container{
+        background: #F5F5F5;
+    }
+    #contact .col1{
+        width: 100%;
+        background: #F2EAD3;
+    }
+    #contact{
+        height: 170vh;
+    }
+    #contact .col2{
+        background: #F5F5F5;
+        color: black;
+        width: 100%;
+
+    }
+}
+@media screen and (max-width: 400px){
+    #contact .input{
+        width: 250px;
+    }
+    
+}
+#blog img{
+    height: 200px;
+    width: 250px;
+}
+#blog .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 450px;
+    width: 300px;
+    border-radius: 10px;
+}
+#blog h5{
+    color: #F2EAD3;
+}
+#blog .header{
+    border-bottom: 2px solid #3F2305;
+}
+footer li{
+    font-size: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    width: 50px;
+    position: fixed;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+}
